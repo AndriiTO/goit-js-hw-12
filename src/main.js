@@ -67,8 +67,7 @@ async function onSearch(e) {
       position: 'topRight',
     });
 
-    // Якщо результати закінчуються вже на першій сторінці
-    if (totalHits <= perPage) {
+        if (totalHits <= perPage) {
       hideLoadMoreButton();
       iziToast.info({
         title: 'End',
@@ -135,3 +134,4 @@ function scrollAfterLoad() {
     behavior: 'smooth',
   });
 }
+

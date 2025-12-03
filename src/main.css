@@ -32,5 +32,27 @@
 }
 
 .is-hidden {
-  display: none !important;
+  display: none ;
+}
+
+.loader {
+  width: 42px;
+  height: 42px;
+  border: 6px solid #ccc;
+  border-top-color: red;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 9999;
+}
+
+
+@keyframes rotation {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
